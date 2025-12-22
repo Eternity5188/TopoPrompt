@@ -1,0 +1,47 @@
+2025-12-18 02:14:32,685 - logger name:log-common/METRLA/topo-43/topo.log
+2025-12-18 02:14:32,685 - Params: {'conf': 'conf/METRLA.json', 'seed': 43, 'paral': 0, 'gpuid': 0, 'logname': 'topo', 'method': 'TopoPrompt', 'load_first_year': 0, 'first_year_model_path': 'log/PEMS3/topo-43/2011/14.7956.pkl', 'device': device(type='cuda', index=0), 'methods': {'TopoPrompt': <class 'src.models.model.TopoPrompt'>}, 'begin_year': 2012, 'end_year': 2012, 'dropout': 0.0, 'lr': 0.03, 'batch_size': 64, 'epoch': 100, 'loss': 'mse', 'activation': 'relu', 'scheduler': 'epo', 'y_len': 12, 'x_len': 12, 'data_process': 0, 'raw_data_path': '../autodl-tmp/data2/METRLA/finaldata/', 'save_data_path': '../autodl-tmp/data2/METRLA/Fastdata/', 'graph_path': '../autodl-tmp/data2/METRLA/graph/', 'model_path': 'log-common/METRLA', 'gcn': {'in_channel': 12, 'out_channel': 12, 'hidden_channel': 64}, 'tcn': {'in_channel': 1, 'out_channel': 1, 'kernel_size': 3, 'dilation': 1}, 'rank': 6, 'init': True, 'train': 1, 'auto_test': 1, 'strategy': 'retrain', 'path': 'log-common/METRLA/topo-43', 'logger': <Logger utils.initialize (INFO)>}
+2025-12-18 02:14:32,693 - [*] Year 2012 loaded from ../autodl-tmp/data2/METRLA/Fastdata/2012.npz
+2025-12-18 02:14:33,918 - [*] Year 2012 Dataset load!
+2025-12-18 02:14:33,947 - Total Parameters: 9989
+2025-12-18 02:14:33,947 - Trainable Parameters: 9989
+2025-12-18 02:14:33,949 - [*] Year 2012 Training start
+2025-12-18 02:14:35,059 - node number torch.Size([13248, 12])
+2025-12-18 02:14:41,312 - epoch:0, training loss:150.2299 validation loss:4.4336
+2025-12-18 02:14:48,526 - epoch:1, training loss:113.5010 validation loss:4.2770
+2025-12-18 02:14:55,820 - epoch:2, training loss:108.6931 validation loss:4.9197
+2025-12-18 02:15:03,211 - epoch:3, training loss:106.8847 validation loss:4.3725
+2025-12-18 02:15:09,943 - epoch:4, training loss:105.7201 validation loss:4.2045
+2025-12-18 02:15:17,310 - epoch:5, training loss:105.1407 validation loss:4.8469
+2025-12-18 02:15:24,909 - epoch:6, training loss:104.7279 validation loss:4.1331
+2025-12-18 02:15:32,313 - epoch:7, training loss:104.2505 validation loss:4.4843
+2025-12-18 02:15:39,750 - epoch:8, training loss:104.6515 validation loss:5.2981
+2025-12-18 02:15:47,542 - epoch:9, training loss:104.8534 validation loss:4.3943
+2025-12-18 02:15:55,248 - epoch:10, training loss:104.2533 validation loss:4.2079
+2025-12-18 02:16:02,927 - epoch:11, training loss:103.2059 validation loss:4.9284
+2025-12-18 02:16:10,551 - epoch:12, training loss:102.8609 validation loss:4.4416
+2025-12-18 02:16:12,339 - [*] loss:137.2259
+2025-12-18 02:16:12,407 - [*] year 2012, testing
+2025-12-18 02:16:12,900 - T:3	MAE	3.5800	RMSE	6.7622	MAPE	8.4249
+2025-12-18 02:16:14,023 - T:6	MAE	4.0042	RMSE	7.8420	MAPE	9.5825
+2025-12-18 02:16:17,935 - T:12	MAE	4.6979	RMSE	9.2067	MAPE	11.3720
+2025-12-18 02:16:17,935 - T:Avg	MAE	4.0343	RMSE	7.7884	MAPE	9.6178
+2025-12-18 02:16:17,946 - Finished optimization, total time:72.85 s, best model:log-common/METRLA/topo-43/2012/4.1331.pkl
+2025-12-18 02:16:18,001 - 
+
+Evaluation Metrics Across Years:
+2025-12-18 02:16:18,001 - 3   	MAE	      3.58		    3.58
+2025-12-18 02:16:18,001 - 3   	RMSE	      6.76		    6.76
+2025-12-18 02:16:18,001 - 3   	MAPE	      8.42		    8.42
+2025-12-18 02:16:18,002 - 6   	MAE	      4.00		    4.00
+2025-12-18 02:16:18,002 - 6   	RMSE	      7.84		    7.84
+2025-12-18 02:16:18,002 - 6   	MAPE	      9.58		    9.58
+2025-12-18 02:16:18,002 - 12  	MAE	      4.70		    4.70
+2025-12-18 02:16:18,002 - 12  	RMSE	      9.21		    9.21
+2025-12-18 02:16:18,002 - 12  	MAPE	     11.37		   11.37
+2025-12-18 02:16:18,002 - Avg 	MAE	      4.03		    4.03
+2025-12-18 02:16:18,002 - Avg 	RMSE	      7.79		    7.79
+2025-12-18 02:16:18,002 - Avg 	MAPE	      9.62		    9.62
+2025-12-18 02:16:18,002 - 
+Training Time Statistics:
+2025-12-18 02:16:18,002 - Year 2012 | Total Time:    72.8490s | Avg/Epoch:     5.6038s | Epochs: 13
+2025-12-18 02:16:18,002 - Total training time across all years: 72.8490s

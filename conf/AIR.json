@@ -1,0 +1,37 @@
+{
+    "begin_year": 2016,
+    "end_year": 2019,
+    "dropout": 0.0,
+    "lr": 0.021,
+    "batch_size": 128,
+    "epoch": 100,
+    "gpuid": 1,
+    "loss": "mse",
+    "activation": "relu",
+    "scheduler": "epo",
+    "y_len": 12,
+    "x_len": 12,
+    "data_process": 1,
+    "raw_data_path": "../autodl-tmp/data/AIR/RawData/",
+    "save_data_path": "../autodl-tmp/data/AIR/FastData_fewshot/",
+    "graph_path": "../autodl-tmp/data/AIR/graph/",
+    "model_path": "log-fewshot/AIR-Stream",
+    "gcn": {
+        "in_channel": 12,
+        "out_channel": 12,
+        "hidden_channel": 64
+    },
+    "tcn": {
+        "in_channel": 1,
+        "out_channel": 1,
+        "kernel_size": 3,
+        "dilation": 1
+    },
+    "method": "TopoPrompt",
+    "logname": "topo",
+    "rank": 6,
+    "init": true,
+    "train": 1,
+    "auto_test": 1,
+    "strategy": "retrain"
+}

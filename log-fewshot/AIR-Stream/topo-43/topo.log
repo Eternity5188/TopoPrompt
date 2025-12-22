@@ -1,0 +1,112 @@
+2025-12-18 00:26:47,987 - logger name:log-fewshot/AIR-Stream/topo-43/topo.log
+2025-12-18 00:26:47,988 - Params: {'conf': 'conf/AIR.json', 'seed': 43, 'paral': 0, 'gpuid': 0, 'logname': 'topo', 'method': 'TopoPrompt', 'load_first_year': 0, 'first_year_model_path': 'log/PEMS3/topo-43/2011/14.7956.pkl', 'device': device(type='cuda', index=0), 'methods': {'TopoPrompt': <class 'src.models.model.TopoPrompt'>}, 'begin_year': 2016, 'end_year': 2019, 'dropout': 0.0, 'lr': 0.021, 'batch_size': 128, 'epoch': 100, 'loss': 'mse', 'activation': 'relu', 'scheduler': 'epo', 'y_len': 12, 'x_len': 12, 'data_process': 0, 'raw_data_path': '../autodl-tmp/data/AIR/RawData/', 'save_data_path': '../autodl-tmp/data/AIR/FastData_fewshot/', 'graph_path': '../autodl-tmp/data/AIR/graph/', 'model_path': 'log-fewshot/AIR-Stream', 'gcn': {'in_channel': 12, 'out_channel': 12, 'hidden_channel': 64}, 'tcn': {'in_channel': 1, 'out_channel': 1, 'kernel_size': 3, 'dilation': 1}, 'rank': 6, 'init': True, 'train': 1, 'auto_test': 1, 'strategy': 'retrain', 'path': 'log-fewshot/AIR-Stream/topo-43', 'logger': <Logger utils.initialize (INFO)>}
+2025-12-18 00:28:06,938 - logger name:log-fewshot/AIR-Stream/topo-43/topo.log
+2025-12-18 00:28:06,938 - Params: {'conf': 'conf/AIR.json', 'seed': 43, 'paral': 0, 'gpuid': 0, 'logname': 'topo', 'method': 'TopoPrompt', 'load_first_year': 0, 'first_year_model_path': 'log/PEMS3/topo-43/2011/14.7956.pkl', 'device': device(type='cuda', index=0), 'methods': {'TopoPrompt': <class 'src.models.model.TopoPrompt'>}, 'begin_year': 2016, 'end_year': 2019, 'dropout': 0.0, 'lr': 0.021, 'batch_size': 128, 'epoch': 100, 'loss': 'mse', 'activation': 'relu', 'scheduler': 'epo', 'y_len': 12, 'x_len': 12, 'data_process': 1, 'raw_data_path': '../autodl-tmp/data/AIR/RawData/', 'save_data_path': '../autodl-tmp/data/AIR/FastData_fewshot/', 'graph_path': '../autodl-tmp/data/AIR/graph/', 'model_path': 'log-fewshot/AIR-Stream', 'gcn': {'in_channel': 12, 'out_channel': 12, 'hidden_channel': 64}, 'tcn': {'in_channel': 1, 'out_channel': 1, 'kernel_size': 3, 'dilation': 1}, 'rank': 6, 'init': True, 'train': 1, 'auto_test': 1, 'strategy': 'retrain', 'path': 'log-fewshot/AIR-Stream/topo-43', 'logger': <Logger utils.initialize (INFO)>}
+2025-12-18 00:28:08,866 - [*] Year 2016 loaded from ../autodl-tmp/data/AIR/FastData_fewshot/2016.npz
+2025-12-18 00:28:09,080 - [*] Year 2016 Dataset load!
+2025-12-18 00:28:09,083 - Total Parameters: 36389
+2025-12-18 00:28:09,083 - Trainable Parameters: 36389
+2025-12-18 00:28:09,083 - [*] Year 2016 Training start
+2025-12-18 00:28:09,917 - node number torch.Size([139136, 12])
+2025-12-18 00:28:12,106 - epoch:0, training loss:9994.7481 validation loss:24.4607
+2025-12-18 00:28:14,855 - epoch:1, training loss:4642.1945 validation loss:29.2502
+2025-12-18 00:28:17,605 - epoch:2, training loss:3383.0465 validation loss:36.6463
+2025-12-18 00:28:20,404 - epoch:3, training loss:3071.2521 validation loss:37.0066
+2025-12-18 00:28:23,218 - epoch:4, training loss:2884.6306 validation loss:37.9876
+2025-12-18 00:28:25,838 - epoch:5, training loss:2686.8748 validation loss:39.1719
+2025-12-18 00:28:28,496 - epoch:6, training loss:2429.0741 validation loss:31.7216
+2025-12-18 00:28:29,753 - [*] loss:6040.4053
+2025-12-18 00:28:29,857 - [*] year 2016, testing
+2025-12-18 00:28:30,582 - T:3	MAE	53.8657	RMSE	80.2482	MAPE	51.9469
+2025-12-18 00:28:32,170 - T:6	MAE	52.1356	RMSE	78.4051	MAPE	50.6660
+2025-12-18 00:28:37,635 - T:12	MAE	51.7644	RMSE	78.2431	MAPE	50.4383
+2025-12-18 00:28:37,635 - T:Avg	MAE	52.6748	RMSE	79.0353	MAPE	51.1161
+2025-12-18 00:28:37,646 - Finished optimization, total time:10.60 s, best model:log-fewshot/AIR-Stream/topo-43/2016/24.4607.pkl
+2025-12-18 00:28:39,744 - [*] Year 2017 loaded from ../autodl-tmp/data/AIR/FastData_fewshot/2017.npz
+2025-12-18 00:28:39,757 - [*] Year 2017 Dataset load!
+2025-12-18 00:28:39,757 - [*] load from log-fewshot/AIR-Stream/topo-43/2016/24.4607.pkl
+2025-12-18 00:28:39,767 - [*] Year 2017 Training start
+2025-12-18 00:28:40,905 - node number torch.Size([147712, 12])
+2025-12-18 00:28:42,621 - epoch:0, training loss:5107.0217 validation loss:58.4172
+2025-12-18 00:28:45,435 - epoch:1, training loss:3998.9082 validation loss:50.8847
+2025-12-18 00:28:48,321 - epoch:2, training loss:3811.5951 validation loss:46.5970
+2025-12-18 00:28:51,158 - epoch:3, training loss:3718.7661 validation loss:47.6037
+2025-12-18 00:28:54,045 - epoch:4, training loss:3682.9040 validation loss:50.3063
+2025-12-18 00:28:57,023 - epoch:5, training loss:3652.2125 validation loss:51.9632
+2025-12-18 00:28:59,817 - epoch:6, training loss:3614.4076 validation loss:51.9280
+2025-12-18 00:29:02,537 - epoch:7, training loss:3567.7359 validation loss:49.5286
+2025-12-18 00:29:05,317 - epoch:8, training loss:3547.8085 validation loss:47.1048
+2025-12-18 00:29:06,712 - [*] loss:2963.3323
+2025-12-18 00:29:06,811 - [*] year 2017, testing
+2025-12-18 00:29:07,481 - T:3	MAE	37.1705	RMSE	53.0383	MAPE	52.6719
+2025-12-18 00:29:08,963 - T:6	MAE	38.9769	RMSE	55.4537	MAPE	57.3949
+2025-12-18 00:29:14,225 - T:12	MAE	38.8053	RMSE	54.9278	MAPE	57.8754
+2025-12-18 00:29:14,225 - T:Avg	MAE	38.3529	RMSE	54.5540	MAPE	55.8700
+2025-12-18 00:29:14,237 - Finished optimization, total time:12.07 s, best model:log-fewshot/AIR-Stream/topo-43/2017/46.5970.pkl
+2025-12-18 00:29:16,260 - [*] Year 2018 loaded from ../autodl-tmp/data/AIR/FastData_fewshot/2018.npz
+2025-12-18 00:29:16,274 - [*] Year 2018 Dataset load!
+2025-12-18 00:29:16,274 - [*] load from log-fewshot/AIR-Stream/topo-43/2017/46.5970.pkl
+2025-12-18 00:29:16,280 - [*] Year 2018 Training start
+2025-12-18 00:29:17,347 - node number torch.Size([152704, 12])
+2025-12-18 00:29:19,031 - epoch:0, training loss:3044.0443 validation loss:46.1567
+2025-12-18 00:29:21,616 - epoch:1, training loss:2663.9178 validation loss:45.5894
+2025-12-18 00:29:24,228 - epoch:2, training loss:2595.9583 validation loss:40.6094
+2025-12-18 00:29:26,710 - epoch:3, training loss:2530.2679 validation loss:46.8115
+2025-12-18 00:29:29,317 - epoch:4, training loss:2505.4941 validation loss:46.2258
+2025-12-18 00:29:31,908 - epoch:5, training loss:2462.0821 validation loss:46.0032
+2025-12-18 00:29:34,500 - epoch:6, training loss:2377.1345 validation loss:44.1948
+2025-12-18 00:29:37,443 - epoch:7, training loss:2263.2062 validation loss:46.3771
+2025-12-18 00:29:40,228 - epoch:8, training loss:2207.9342 validation loss:48.2812
+2025-12-18 00:29:41,718 - [*] loss:2306.1978
+2025-12-18 00:29:41,839 - [*] year 2018, testing
+2025-12-18 00:29:42,609 - T:3	MAE	31.7108	RMSE	46.7930	MAPE	59.8906
+2025-12-18 00:29:44,357 - T:6	MAE	33.4553	RMSE	47.9632	MAPE	64.9743
+2025-12-18 00:29:50,194 - T:12	MAE	33.8228	RMSE	48.0598	MAPE	66.9113
+2025-12-18 00:29:50,194 - T:Avg	MAE	32.9695	RMSE	47.6610	MAPE	63.6843
+2025-12-18 00:29:50,207 - Finished optimization, total time:11.32 s, best model:log-fewshot/AIR-Stream/topo-43/2018/40.6094.pkl
+2025-12-18 00:29:52,254 - [*] Year 2019 loaded from ../autodl-tmp/data/AIR/FastData_fewshot/2019.npz
+2025-12-18 00:29:52,272 - [*] Year 2019 Dataset load!
+2025-12-18 00:29:52,273 - [*] load from log-fewshot/AIR-Stream/topo-43/2018/40.6094.pkl
+2025-12-18 00:29:52,279 - [*] Year 2019 Training start
+2025-12-18 00:29:53,359 - node number torch.Size([153856, 12])
+2025-12-18 00:29:55,115 - epoch:0, training loss:3560.4015 validation loss:53.8563
+2025-12-18 00:29:57,813 - epoch:1, training loss:2808.0227 validation loss:50.2378
+2025-12-18 00:30:00,554 - epoch:2, training loss:2670.1562 validation loss:45.6692
+2025-12-18 00:30:03,621 - epoch:3, training loss:2598.3797 validation loss:42.3781
+2025-12-18 00:30:06,452 - epoch:4, training loss:2527.7684 validation loss:40.5846
+2025-12-18 00:30:09,325 - epoch:5, training loss:2469.0009 validation loss:40.2430
+2025-12-18 00:30:12,138 - epoch:6, training loss:2295.6438 validation loss:42.4210
+2025-12-18 00:30:14,950 - epoch:7, training loss:2196.9725 validation loss:42.6719
+2025-12-18 00:30:17,821 - epoch:8, training loss:2151.0109 validation loss:43.0870
+2025-12-18 00:30:20,642 - epoch:9, training loss:2130.1496 validation loss:42.3191
+2025-12-18 00:30:23,523 - epoch:10, training loss:2115.4444 validation loss:42.2600
+2025-12-18 00:30:26,417 - epoch:11, training loss:2096.1132 validation loss:42.0726
+2025-12-18 00:30:27,818 - [*] loss:2182.4399
+2025-12-18 00:30:27,934 - [*] year 2019, testing
+2025-12-18 00:30:28,631 - T:3	MAE	32.4379	RMSE	45.1926	MAPE	56.3525
+2025-12-18 00:30:30,267 - T:6	MAE	34.2444	RMSE	47.4321	MAPE	60.9649
+2025-12-18 00:30:35,527 - T:12	MAE	34.1012	RMSE	47.0434	MAPE	61.6906
+2025-12-18 00:30:35,527 - T:Avg	MAE	33.5429	RMSE	46.5074	MAPE	59.4262
+2025-12-18 00:30:35,540 - Finished optimization, total time:16.36 s, best model:log-fewshot/AIR-Stream/topo-43/2019/40.2430.pkl
+2025-12-18 00:30:35,540 - 
+
+Evaluation Metrics Across Years:
+2025-12-18 00:30:35,540 - 3   	MAE	     53.87	     37.17	     31.71	     32.44		   38.80
+2025-12-18 00:30:35,541 - 3   	RMSE	     80.25	     53.04	     46.79	     45.19		   56.32
+2025-12-18 00:30:35,541 - 3   	MAPE	     51.95	     52.67	     59.89	     56.35		   55.22
+2025-12-18 00:30:35,541 - 6   	MAE	     52.14	     38.98	     33.46	     34.24		   39.70
+2025-12-18 00:30:35,541 - 6   	RMSE	     78.41	     55.45	     47.96	     47.43		   57.31
+2025-12-18 00:30:35,541 - 6   	MAPE	     50.67	     57.39	     64.97	     60.96		   58.50
+2025-12-18 00:30:35,541 - 12  	MAE	     51.76	     38.81	     33.82	     34.10		   39.62
+2025-12-18 00:30:35,541 - 12  	RMSE	     78.24	     54.93	     48.06	     47.04		   57.07
+2025-12-18 00:30:35,541 - 12  	MAPE	     50.44	     57.88	     66.91	     61.69		   59.23
+2025-12-18 00:30:35,541 - Avg 	MAE	     52.67	     38.35	     32.97	     33.54		   39.39
+2025-12-18 00:30:35,541 - Avg 	RMSE	     79.04	     54.55	     47.66	     46.51		   56.94
+2025-12-18 00:30:35,541 - Avg 	MAPE	     51.12	     55.87	     63.68	     59.43		   57.52
+2025-12-18 00:30:35,541 - 
+Training Time Statistics:
+2025-12-18 00:30:35,541 - Year 2016 | Total Time:    10.5962s | Avg/Epoch:     1.5137s | Epochs: 7
+2025-12-18 00:30:35,541 - Year 2017 | Total Time:    12.0688s | Avg/Epoch:     1.3410s | Epochs: 9
+2025-12-18 00:30:35,541 - Year 2018 | Total Time:    11.3183s | Avg/Epoch:     1.2576s | Epochs: 9
+2025-12-18 00:30:35,541 - Year 2019 | Total Time:    16.3609s | Avg/Epoch:     1.3634s | Epochs: 12
+2025-12-18 00:30:35,541 - Total training time across all years: 50.3443s

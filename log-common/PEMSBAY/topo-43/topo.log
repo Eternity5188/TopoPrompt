@@ -1,0 +1,52 @@
+2025-12-18 02:08:32,842 - logger name:log-common/PEMSBAY/topo-43/topo.log
+2025-12-18 02:08:32,842 - Params: {'conf': 'conf/PEMSBAY.json', 'seed': 43, 'paral': 0, 'gpuid': 0, 'logname': 'topo', 'method': 'TopoPrompt', 'load_first_year': 0, 'first_year_model_path': 'log/PEMS3/topo-43/2011/14.7956.pkl', 'device': device(type='cuda', index=0), 'methods': {'TopoPrompt': <class 'src.models.model.TopoPrompt'>}, 'begin_year': 2017, 'end_year': 2017, 'dropout': 0.0, 'lr': 0.03, 'batch_size': 64, 'epoch': 100, 'loss': 'mse', 'activation': 'relu', 'scheduler': 'epo', 'y_len': 12, 'x_len': 12, 'data_process': 0, 'raw_data_path': '../autodl-tmp/data2/PEMSBAY/finaldata/', 'save_data_path': '../autodl-tmp/data2/PEMSBAY/Fastdata/', 'graph_path': '../autodl-tmp/data2/PEMSBAY/graph/', 'model_path': 'log-common/PEMSBAY', 'gcn': {'in_channel': 12, 'out_channel': 12, 'hidden_channel': 64}, 'tcn': {'in_channel': 1, 'out_channel': 1, 'kernel_size': 3, 'dilation': 1}, 'rank': 6, 'init': True, 'train': 1, 'auto_test': 1, 'strategy': 'retrain', 'path': 'log-common/PEMSBAY/topo-43', 'logger': <Logger utils.initialize (INFO)>}
+2025-12-18 02:08:32,849 - [*] Year 2017 loaded from ../autodl-tmp/data2/PEMSBAY/Fastdata/2017.npz
+2025-12-18 02:08:35,297 - [*] Year 2017 Dataset load!
+2025-12-18 02:08:35,321 - Total Parameters: 13529
+2025-12-18 02:08:35,321 - Trainable Parameters: 13529
+2025-12-18 02:08:35,322 - [*] Year 2017 Training start
+2025-12-18 02:08:37,446 - node number torch.Size([20800, 12])
+2025-12-18 02:08:46,840 - epoch:0, training loss:46.7307 validation loss:2.4461
+2025-12-18 02:08:57,837 - epoch:1, training loss:16.9376 validation loss:2.1466
+2025-12-18 02:09:08,940 - epoch:2, training loss:14.4584 validation loss:1.9998
+2025-12-18 02:09:20,253 - epoch:3, training loss:13.8960 validation loss:1.9799
+2025-12-18 02:09:31,447 - epoch:4, training loss:13.7088 validation loss:2.0071
+2025-12-18 02:09:42,615 - epoch:5, training loss:13.5046 validation loss:2.6239
+2025-12-18 02:09:54,028 - epoch:6, training loss:13.6012 validation loss:1.9977
+2025-12-18 02:10:05,327 - epoch:7, training loss:13.3363 validation loss:2.7664
+2025-12-18 02:10:16,544 - epoch:8, training loss:13.1511 validation loss:1.9345
+2025-12-18 02:10:27,733 - epoch:9, training loss:13.4133 validation loss:2.4190
+2025-12-18 02:10:38,733 - epoch:10, training loss:13.1521 validation loss:2.3008
+2025-12-18 02:10:51,044 - epoch:11, training loss:13.0981 validation loss:1.9126
+2025-12-18 02:11:02,346 - epoch:12, training loss:13.0113 validation loss:2.0698
+2025-12-18 02:11:13,545 - epoch:13, training loss:2579848.1314 validation loss:49.6511
+2025-12-18 02:11:25,146 - epoch:14, training loss:2223.0932 validation loss:36.1609
+2025-12-18 02:11:36,335 - epoch:15, training loss:1410.0360 validation loss:27.2801
+2025-12-18 02:11:47,739 - epoch:16, training loss:572.3182 validation loss:10.1229
+2025-12-18 02:11:59,130 - epoch:17, training loss:111.6321 validation loss:6.5272
+2025-12-18 02:12:01,846 - [*] loss:15.1434
+2025-12-18 02:12:02,060 - [*] year 2017, testing
+2025-12-18 02:12:03,370 - T:3	MAE	1.3673	RMSE	2.4867	MAPE	2.7883
+2025-12-18 02:12:06,286 - T:6	MAE	1.5753	RMSE	3.1186	MAPE	3.3920
+2025-12-18 02:12:16,106 - T:12	MAE	1.8777	RMSE	3.8558	MAPE	4.2480
+2025-12-18 02:12:16,106 - T:Avg	MAE	1.5641	RMSE	3.0619	MAPE	3.3722
+2025-12-18 02:12:16,127 - Finished optimization, total time:152.52 s, best model:log-common/PEMSBAY/topo-43/2017/1.9126.pkl
+2025-12-18 02:12:16,241 - 
+
+Evaluation Metrics Across Years:
+2025-12-18 02:12:16,242 - 3   	MAE	      1.37		    1.37
+2025-12-18 02:12:16,242 - 3   	RMSE	      2.49		    2.49
+2025-12-18 02:12:16,242 - 3   	MAPE	      2.79		    2.79
+2025-12-18 02:12:16,242 - 6   	MAE	      1.58		    1.58
+2025-12-18 02:12:16,242 - 6   	RMSE	      3.12		    3.12
+2025-12-18 02:12:16,242 - 6   	MAPE	      3.39		    3.39
+2025-12-18 02:12:16,242 - 12  	MAE	      1.88		    1.88
+2025-12-18 02:12:16,242 - 12  	RMSE	      3.86		    3.86
+2025-12-18 02:12:16,242 - 12  	MAPE	      4.25		    4.25
+2025-12-18 02:12:16,242 - Avg 	MAE	      1.56		    1.56
+2025-12-18 02:12:16,242 - Avg 	RMSE	      3.06		    3.06
+2025-12-18 02:12:16,242 - Avg 	MAPE	      3.37		    3.37
+2025-12-18 02:12:16,242 - 
+Training Time Statistics:
+2025-12-18 02:12:16,242 - Year 2017 | Total Time:   152.5205s | Avg/Epoch:     8.4734s | Epochs: 18
+2025-12-18 02:12:16,242 - Total training time across all years: 152.5205s
