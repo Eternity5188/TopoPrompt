@@ -8,5 +8,4 @@ TopoPrompt adapts to changing graph structures over time without retraining. Itâ
 
 ## Data
 
-The datasets used in our experiments (including PEMS03, PEMS04, etc.) are publicly available:  
-[Download from Google Drive](https://drive.google.com/drive/folders/113DGdBEBGlf6tO9xbDP3KZbtQAie2jUd?usp=sharing)
+The datasets used in our experiments include PEMS03-Stream, PEMS04-Stream, and Air-Stream, which are publicly available and can be obtained from other relevant repositories.
